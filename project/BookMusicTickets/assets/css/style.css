@@ -1,0 +1,359 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a:link {
+  color: inherit; /* hoặc chọn màu khác bạn muốn */
+}
+
+a:visited {
+  color: inherit; /* hoặc chọn màu khác bạn muốn */
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* HEADER */
+#header {
+  background-color: black !important;
+  color: white !important;
+  font-size: 1.6rem;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 1;
+}
+
+.header-button {
+  display: inline-block;
+  padding: 1.8rem 2.4rem;
+  position: relative;
+  text-decoration: none;
+}
+
+.header-button:hover {
+  background-color: rgba(239, 235, 228, 0.721);
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown-more-detail {
+  display: none;
+  background-color: rgba(239, 235, 228, 0.721);
+  color: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.dropdown-more-detail li {
+  /* margin-top: 1.6rem; */
+  padding: 1.6rem 1.8rem;
+}
+
+.dropdown-more-detail li:hover {
+  background-color: rgba(239, 235, 228, 0.721);
+}
+
+.dropdown-more-detail a {
+  text-decoration: none;
+}
+
+.header-button.more-button:hover .dropdown-more-detail {
+  display: block;
+}
+
+.search-button {
+  right: 0px;
+  display: inline-block;
+  padding: 1.2rem 2.4rem;
+  position: absolute;
+  text-decoration: none;
+}
+
+.search-button:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+.nav-arrow-down {
+  font-size: 1rem;
+}
+
+/*SLIDER*/
+
+#slider {
+  margin-top: 5.4rem;
+  padding-top: 50%;
+  position: relative;
+  background: url(../image/la.jpg) top center / cover;
+}
+
+#slider .text-content {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  /* 
+  left: 50%;
+  transform: translateX(-50%); */
+  text-align: center;
+  width: 100%;
+}
+
+.text-content .text-heading {
+  font-size: 2.8rem;
+}
+
+.text-content .text-description {
+  font-size: 2rem;
+  margin-top: 2%;
+}
+/* Container */
+
+#container {
+  margin: 0% 17%;
+  padding: 6.4rem 1.6rem;
+}
+
+#container .container-heading {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+#container .container-sub-heading {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+#container .container-description {
+  font-size: 1.6rem;
+  margin-top: 1.4rem;
+  margin-bottom: 1.8rem;
+}
+
+#container .container-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center; /* Canh chỉnh các phần tử vào giữa */
+}
+
+#container .description-image {
+  text-align: center;
+  margin-bottom: 1.8rem;
+  margin-top: 2.2rem;
+  font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+  #container .container-column {
+    grid-template-columns: 1fr; /* Khi chiều rộng màn hình dưới 768px, chỉ hiển thị 1 cột */
+  }
+}
+
+/* Tour - dates */
+
+.container-tour-date {
+  margin-top: 2.4rem;
+  background-color: black;
+  padding-bottom: 4%;
+}
+
+.container-tour-date .heading-tour {
+  color: white;
+  padding-top: 6%;
+  text-align: center;
+  margin: 0% 17%;
+}
+
+.heading-tour .h1-tour {
+  font-size: 3rem;
+}
+
+.heading-tour .h4-tour {
+  font-size: 1.2rem;
+  margin-top: 1%;
+}
+
+/* calendar-tour */
+
+.calendar-tour {
+  color: black;
+  background-color: white;
+  margin-top: 3%;
+  font-size: 1.8rem;
+}
+
+.calendar-tour .info-calendar {
+  padding: 0.6rem 0;
+  border-bottom: 0.2rem solid #000;
+  box-sizing: border-box;
+  text-align: justify;
+  padding-left: 2%;
+}
+
+.calendar-tour .info-calendar p {
+  display: inline-block;
+}
+
+.calendar-tour .info-calendar .status {
+  margin-left: 8%;
+  padding: 0.5%;
+  background-color: rgb(225, 84, 32);
+  color: white;
+}
+
+.info-calendar .number {
+  margin-left: 85%;
+  padding: 0.5% 0.75%;
+  color: white;
+  border-radius: 50%;
+  background-color: black;
+}
+
+/* image-tour */
+.image-tour {
+  margin-top: 6%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  box-sizing: border-box;
+  place-items: center;
+  gap: 2%;
+  /* padding-bottom: 4%; */
+}
+
+.image-tour .detail-image {
+  width: 100%;
+}
+
+.image-tour .image-description {
+  background-color: white;
+  color: #000;
+  font-size: 1.8rem;
+}
+
+.image-description p {
+  text-align: left;
+  margin-left: 4%;
+  padding-top: 4%;
+}
+
+.image-description button {
+  margin-top: 4%;
+  padding: 2%;
+  background-color: black;
+  color: white;
+  font-size: 1.6rem;
+  margin-bottom: 6%;
+}
+
+/* Contact*/
+#container-contact {
+  width: 100%;
+  background-color: white;
+}
+
+#container-contact .heading {
+  text-align: center;
+}
+
+.info-contact {
+  font-size: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 1.6%;
+  padding-bottom: 4%;
+}
+
+.form-submit {
+  margin-right: 25%;
+  position: relative;
+}
+
+.form-submit input {
+  padding: 2%;
+  margin-bottom: 4%;
+  box-sizing: border-box;
+}
+
+.form-submit button {
+  position: absolute;
+  right: 0;
+  background-color: #000;
+  color: white;
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 2%;
+}
+
+.form-submit button:hover {
+  background-color: rgb(184, 182, 182);
+  color: #000;
+  cursor: pointer;
+}
+
+.detail-contact p {
+  margin: 0 2% 2% 2%;
+}
+
+.form-submit .name-email {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3%;
+  box-sizing: border-box;
+  margin-bottom: 1%;
+}
+
+.form-submit .message input {
+  width: 100%;
+  box-sizing: border-box;
+}
+.detail-contact {
+  text-align: center;
+}
+
+.text-icon-contact {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 1%;
+}
+
+.text-icon-contact p {
+  text-align: left;
+}
+
+.text-icon-contact i {
+  text-align: right;
+  margin-right: 1%;
+
+  font-size: 2rem;
+}
+
+/* Footer */
+
+#footer {
+  padding-top: 6%;
+}
+
+.image-footer img {
+  width: 100%;
+  height: auto;
+}
+
+.icon-footer {
+  font-size: 3.2rem;
+  text-align: center;
+  padding-top: 4%;
+  padding-bottom: 2%;
+}
+
+.powered {
+  font-size: 1.6rem;
+  text-align: center;
+  padding-bottom: 4%;
+}
