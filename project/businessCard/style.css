@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #baeabe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  display: flex;
+  background: #ffffff;
+  width: 1200px;
+  height: 500px;
+  border-radius: 25px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.left-column {
+  background-color: #2e7d32;
+  color: white;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding: 40px;
+  position: relative;
+}
+
+.contact {
+  margin-top: 80px;
+}
+
+.contact p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  display: flex;
+}
+
+.contact p svg {
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+.distance {
+  background-color: white;
+  width: 100%;
+  padding: 15px;
+  position: absolute;
+  left: 0;
+  bottom: 200px;
+}
+
+.social {
+  margin-bottom: 60px;
+}
+
+.social p {
+  margin-bottom: 15px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.icons span {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px 15px;
+  background: white;
+  color: #2e7d32;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.icons span:hover {
+  background-color: #388e3c;
+  color: white;
+}
+
+.right-column {
+  width: 65%;
+  padding: 40px;
+  position: relative;
+}
+
+.green-right-corner {
+  width: 60px;
+  height: 60px;
+  background-color: #2e7d32;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 60px;
+}
+
+.profile-image {
+  position: absolute;
+  left: -80px;
+  top: 40px;
+  width: 250px;
+  height: 400px;
+  z-index: 2;
+}
+
+.top-right-image {
+  width: 40px;
+  height: 20px;
+  position: absolute;
+  top: 15px;
+  right: -20px;
+  background-color: rgb(192, 189, 185);
+  z-index: 3;
+}
+
+.top-left-image {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 35px;
+  left: -20px;
+  background-color: rgb(231, 229, 225);
+  z-index: 3;
+}
+
+.bottom-left-image {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  bottom: -20px;
+  left: 20px;
+  background-color: rgb(231, 229, 225);
+  z-index: 3;
+}
+
+.bottom-right-image {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  bottom: -30px;
+  border-radius: 50%; /* This was the correction from the previous step to make it a circle */
+  right: -30px;
+  background-color: #2e7d32;
+  z-index: 1; /* Lower this z-index so it's behind the image */
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative; /* Ensure the image is a positioned element */
+  z-index: 2; /* Give the image a higher z-index than .bottom-right-image */
+}
+
+.info {
+  margin-left: 180px;
+}
+
+.info h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.info h1 span {
+  display: block;
+}
+
+.green {
+  color: #2e7d32;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.title {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.technologies ul {
+  list-style: disc inside;
+  margin-top: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+.technologies ul li {
+  margin-bottom: 10px;
+}
